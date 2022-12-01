@@ -48,11 +48,13 @@
             } else if (kigo == "*") {
                 result = num1 * num2;
             } else if (kigo == "/" && num2 == 0) {
-                result = "0で割ることはできません。"
+                alert("0で割ることはできません。");
+                result = "0で割ることはできません。";
             }else if (kigo == "/") {
-                result = num1 / num2
+                result = num1 / num2;
             } else {
-                result = "数字は半角で記号は + - * / のいずれかを入力してください^^"
+                alert("数字は半角で記号は + - * / のいずれかを入力してください^^");
+                result = "数字は半角で記号は + - * / のいずれかを入力してください^^";
             }
 
 
