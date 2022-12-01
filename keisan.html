@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>簡易お電卓</title>
+    <title>簡易電卓</title>
     <style>
         #num1 {
             height: 25px;
@@ -47,10 +47,12 @@
                 result = num1 - num2;
             } else if (kigo == "*") {
                 result = num1 * num2;
-            } else if (kigo == "/") {
+            } else if (kigo == "/" && num2 == 0) {
+                result = "0で割ることはできません。"
+            }else if (kigo == "/") {
                 result = num1 / num2
             } else {
-                result ="数字は半角で記号は + - * / のいずれかを入力してください^^"
+                result = "数字は半角で記号は + - * / のいずれかを入力してください^^"
             }
 
 
