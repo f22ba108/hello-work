@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <style>
+        body {
+            background-color: #94fa9c;
+        }
+
+        .login {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function clickCheck() {
+            let inputNum = document.getElementById("UserID").value;
+            let inputWord = document.getElementById("myPass").value;
+            if (inputNum == "9973" && inputWord == "4181") {
+                window.location.href = "movie.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login">
+        アリス先生の好きな色をカタカナで入力してください。(例：黄色→キ)<br>
+        <input type="text" id="UserID"><br>
+        フィボナッチ数の19番目を入力してください。<br>
+        <input type="text" id="myPass"><br>
+        <button onclick="clickCheck()">Login</button>
+    </div>
+</body>
+
+</html>
