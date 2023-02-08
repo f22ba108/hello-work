@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(146, 238, 250), #93c0ff);
+        }
+
+        .white_box {
+            /* 外の枠線の設定 */
+            width: 175%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            background: #d0f6fb;
+        }
+
+        .login {
+            position: absolute;
+            top: 55%;
+            left: 42%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+
+        button {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function clickCheck() {
+            let inputColor = document.getElementById("color").value;
+            let inputTeam = document.getElementById("team").value;
+            if (inputColor == "アカ" && inputTeam == "マンチェスター・シティ") {
+                window.location.href = "top_page.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="white_box">
+            アリス先生の好きな色をカタカナで入力。(例：黄色→キ)<br>
+            <input type="text" id="color"><br>
+            小林圭吾くんの好きなサッカーのクラブチームをカタカナで入力。<br>
+            <input type="text" id="team"><br>
+            <button onclick="clickCheck()">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>
