@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画ススメ</title>
+    <style>
+        body {
+            /* 背景色 */
+            background-color: #abfdb0;
+        }
+
+        footer {
+            /* フッターの設定 */
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            background-color: #dce775;
+        }
+
+        h1 {
+            /* 順位表記とタイトルの色と大きさ */
+            font-size: 200%;
+            color: #4c3cda;
+        }
+
+        h2 {
+            /* 感想の文の色 */
+            color: black;
+        }
+        p {
+            text-align: center;
+        }
+
+
+        .parent_box {
+            /* <hr>で挟んだ１個のかたまり */
+            margin: 0px 10% 0px 10%;
+            display: flex;
+            width: 80%;
+        }
+
+        /* 画像とテキストの間 */
+        .right_text {
+            margin: 0 0 0 30px;
+        }
+
+        .left_text {
+            margin: 0 30px 0 0;
+        }
+
+        /* 各画像大きさ */
+        #imax {
+            height: 300px;
+            width: 450px;
+            border: 1px solid black;
+            border-radius: 2%;
+        }
+
+        #red {
+            height: 300px;
+            width: 490px;
+            border: 1px solid #fe6666;
+            border-radius: 2%;
+        }
+
+        #name {
+            height: 330px;
+            width: 490px;
+            border: 1px solid #20fd78;
+            border-radius: 2%;
+        }
+
+        #suzume {
+            height: 300px;
+            width: 490px;
+            border: 1px solid #41efff;
+            border-radius: 2%;
+        }
+
+        #gomi {
+            height: 270px;
+            width: 450px;
+            border: 1px solid #26172b;
+            border-radius: 2%;
+        }
+
+        #slam {
+            height: 320px;
+            width: 450px;
+            border: 1px solid #ff0000;
+            border-radius: 2%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>2022年に観た映画の話</h1>
+    映画館と映画が好きでよく行くので、去年観た映画館で観た21作品の中から個人的にとても良かった作品 4選
+    <hr>
+
+    <!-- 映画館 -->
+    <div class="parent_box">
+        <div class="left_text">
+            <h2>番外編１<br>グランドシネマサンシャイン 池袋</h2><br>
+            　2019年7月に池袋徒歩10分のところにオープンした映画館。
+            特徴は、IMAXのスクリーンとその音響。国内１位の大きさです。<br>
+            　W25.8m × H18.9mで一般的な25mプールよりもデカいです。
+            ここで観すぎると他の劇場がしょぼく感じてしまうのでとっておきで観に行くのがおすすめ。
+            売店のポップコーンやパスタ、アルコール類も持ち込みOK！
+        </div>
+        <div>
+            <img id="imax" src="imax.JPEG">
+        </div>
+    </div>
+    <hr>
+
+    <!-- OnePiece -->
+    <div class="parent_box">
+        <div>
+            <img id="red" src="red.jpg">
+        </div>
+        <div class="right_text">
+            <h2>第４位<br>ONE PIECE FILM RED</h2><br>
+            　少年ジャンプにて、連載26周年を迎えたワンピースの劇場15作品目となるこの作品は劇中歌に力を入れた作品になっていました。<br>
+            　しかし、その反面シナリオは薄味で問題提起はあるもののその解決やストーリー性がない作品だと感じました。
+            また、今作はクロコダイルやエネル、ドフラなどの"分かりやすい敵"が登場しなかったため、ルフィの行動がかなりおとなしかったです。<br>
+            　と言うものの待ち望んでいたシャンクスの戦闘シーンや覇王色の覇気を観ることが出来たのでヨシ！
+        </div>
+    </div>
+    <hr>
+
+    <!-- 君の名は。IMAX -->
+    <div class="parent_box">
+        <div class="left_text">
+            <h2>第３位<br>君の名は。IMAX</h2><br>
+            　2016年に公開された新海誠監督作品です。RADWIMPSとの協力のもと多くの楽曲が作中に登場します。<br>
+            　また、作画がとても秀麗でリアルなのですが、アニメのキャラクターが浮かない程度の色彩になっていて、とても自然です。ストーリーは言わずもがなです。<br>
+            　新作の公開を記念して、IMAX上映されたのですが、その作画や楽曲ととんでもなく相性がよくぶっ飛びそうになりました。
+        </div>
+        <div>
+            <img id="name" src="name.JPEG">
+        </div>
+    </div>
+    <hr>
+
+    <!-- すずめの戸締まり -->
+    <div class="parent_box">
+        <div>
+            <img id="suzume" src="suzume.jpeg">
+        </div>
+        <div class="right_text">
+            <h2>第２位<br>すずめの戸締まり</h2><br>
+            　この作品は一言で表すなら、壮大なSFラブコメです。<br>
+            　序盤でトラブルに巻き込まれ、愛媛→神戸→東京と環境が目まぐるしく変化していくのですが、その行き先で出会う人に助けられながら物語が進んでいきます。
+            そこでいいなと思ったのが、助けてもらったことに対して、仕事を手伝ったり、子供の面倒を見たりして、対価を支払っていたところです。
+            ただの親切で終わらないのがとてもよかったです。<br>
+            　また、君の名は。や天気の子とは異なり、楽曲ではなく物語やシナリオで勝負している印象を受けました。
+        </div>
+    </div>
+    <hr>
+
+    <!-- ゴミ -->
+    <div class="parent_box">
+        <div class="left_text">
+            <h2>番外編２<br>大怪獣のあとしまつ</h2><br>
+            　ゴミの紹介です。初めてYouTubeでPVを見た時、死んだ怪獣をどうやって処分するのか?!という内容にとてもワクワクしました。<br>
+            　4月公開でした。本編が開始して10分経つ頃には、早く終わってくれと手を合わせていました。ドラゴンボールの実写より酷かったです。SNS眺めている時間より無駄です。<br>
+            　俺だけこんな思いするのは癪なので、みんな観て時間を無駄にしてください。AmazonPrimeにあります。
+        </div>
+        <div>
+            <img id="gomi" src="gomi.jpeg">
+        </div>
+    </div>
+    <hr>
+
+    <!-- スラムダンク -->
+    <div class="parent_box">
+        <div>
+            <img id="slam" src="slam.JPG">
+        </div>
+        <div class="right_text">
+            <h2>第１位<br>THE FIRST SLAM DUNK</h2><br>
+            　速攻で１位に決定しました。<br>
+            　昨年、全面にCGを使いも自然な2Dアニメに見える「ドラゴンボール超」でアニメ映画に大きな変化が起きたと思っていたのですが、
+            この作品では別の角度から進化していて驚きました。<br>
+            　動きに合わせて、動くユニフォームや輪郭に沿って流れる汗など、あまりにリアルで映画というより、バスケの試合を観ている感覚になりました。
+            なので、展開やセリフをほぼ知っているのにも関わらず、シュートを決めると観客のようにテンションがあがりました。<br>
+            マンガの持ち味の良さを損なわないように、マンガにペンで色を塗った動いているかのような理想的なアニメ映画だと私は思っています！
+
+        </div>
+    </div>
+    <hr>
+
+    <!-- 引用 -->
+    引用元：<br>
+    スラムダンク：<a href="https://slamdunk-movie.jp/">https://slamdunk-movie.jp/</a><br>
+    すずめの戸締まり：<a href="https://suzume-tojimari-movie.jp/">https://suzume-tojimari-movie.jp/</a><br>
+    君の名は。：<a href="http://www.kiminona.com/">http://www.kiminona.com/</a><br>
+    ワンピレッド：<a href="https://www.onepiece-film.jp/">https://www.onepiece-film.jp/</a><br>
+    大怪獣のあとしまつ：<a href="https://www.daikaijyu-atoshimatsu.jp/">https://www.daikaijyu-atoshimatsu.jp/</a><br>
+    グランドシネマサンシャイン池袋：<a href="https://www.cinemasunshine.co.jp/theater/gdcs/">https://www.cinemasunshine.co.jp/</a>
+    
+
+    <footer>
+        <p>
+            <!-- フッター、他のリンク先 -->
+            <a href="top_page.html">トップページへ</a><br>
+            <a href="speed_clickn.html">クリック速度測定</a>
+        </p>
+    </footer>
+</body>
+
+</html>
