@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手配書一覧</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image:
+                radial-gradient(#efdc7f 10%, transparent 10%),
+                radial-gradient(#efdc7f 10%, transparent 10%);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+
+        header {
+            background-color: #efce60;
+            color: #0c0d2f;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            /* 他の要素よりも前面に表示されるようにする */
+        }
+
+        hr {
+            border-top: 4px dotted #7f92ef;
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+        }
+
+        .container {
+            padding: 120px 20px 20px;
+            /* ヘッダーと画像の分の余白を追加 */
+        }
+
+        .back-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item img {
+            max-width: 90%;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-link">前のページに戻る</a>
+        <h1>手配書一覧</h1>
+    </header>
+
+    <div class="container">
+        <!-- 手配書1 -->
+        <div class="item">
+            <h2>① SHIROISHI</h2>
+            <img src="test.jpeg" alt="白石先生の画像">
+        </div>
+        <hr>
+        <!-- 手配書2 -->
+        <div class="item">
+            <h2>② NAOYUKI・SHIROISHI</h2>
+            <img src="test.jpeg" alt="白石先生の画像">
+        </div>
+        <hr>
+        <!-- 手配書3 -->
+        <div class="item">
+            <h2>③ NAOYUKI・SHIROISHI</h2>
+            <img src="test.jpeg" alt="白石先生の画像">
+        </div>
+        <hr>
+        <!-- ここに他の手配書の情報を追加 -->
+    </div>
+</body>
+
+</html>
