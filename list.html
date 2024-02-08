@@ -21,7 +21,7 @@
         header {
             background-color: #efce60;
             color: #0c0d2f;
-            padding: 10px 0;
+            padding: 0px 0;
             text-align: center;
             width: 100%;
             position: fixed;
@@ -29,6 +29,13 @@
             left: 0;
             z-index: 1000;
             /* 他の要素よりも前面に表示されるようにする */
+        }
+
+        header a.back-link {
+            color: #007bff;
+            text-decoration: none;
+            float: right; /* 右寄せ */
+            margin-right: 20px; /* 余白を追加 */
         }
 
         hr {
@@ -39,13 +46,8 @@
         }
 
         .container {
-            padding: 120px 20px 20px;
-            /* ヘッダーと画像の分の余白を追加 */
-        }
-
-        .back-link {
-            color: #007bff;
-            text-decoration: none;
+            padding: 70px 20px 20px;
+            /* ヘッダーと画像の余白を追加 */
         }
 
         .item {
@@ -63,7 +65,7 @@
 <body>
     <header>
         <a href="javascript:history.back()" class="back-link">前のページに戻る</a>
-        <h1>手配書一覧</h1>
+        <h2>手配書一覧</h2>
     </header>
 
     <div class="container">
